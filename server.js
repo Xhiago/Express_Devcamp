@@ -23,6 +23,7 @@ app.use(express.json())
 
 //Ejecutar (Esto se debe hacer antes de las rutas)
 connectdb()
+app.use(express.json())
 
 app.use('/api/v1/bootcamps' , bootcampRoutes)
 app.use('/api/v1/users' , UserRoutes)
